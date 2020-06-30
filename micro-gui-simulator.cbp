@@ -45,7 +45,22 @@
 		<ExtraCommands>
 			<Add after="XCOPY $(#sdl2)\bin\*.dll $(TARGET_OUTPUT_DIR) /D /Y" />
 		</ExtraCommands>
-		<Unit filename="main.cpp" />
+		<Unit filename="example.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="example.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="simulator.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="simulator.h" />
+		<Unit filename="system.h" />
+		<Unit filename="ugui.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ugui.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
